@@ -1,0 +1,6 @@
+<h1>Leave a review for <%= @restaurant.name %></h1>
+<%= simple_form_for [@restaurant, @review] do |f| %>
+<%= f.input :rating %>
+<%= f.input :content %>
+<%= f.button :submit %>
+<% end %>
